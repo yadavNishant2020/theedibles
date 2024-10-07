@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_footer_link_groups",
+  "info": {
+    "name": "Link Group",
+    "icon": "angle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.links"
+    }
+  }
+}

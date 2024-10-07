@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "customer_email": {
+      "type": "email"
+    },
+    "customer_name": {
+      "type": "string"
+    },
+    "coupon_code": {
+      "type": "string"
+    },
+    "items_count": {
+      "type": "integer"
+    },
+    "items_qty": {
+      "type": "integer"
+    },
+    "grand_total": {
+      "type": "decimal"
+    },
+    "sub_total": {
+      "type": "decimal"
+    },
+    "tax_total": {
+      "type": "decimal"
+    },
+    "discount": {
+      "type": "decimal"
+    },
+    "meal_plan_id": {
+      "type": "integer"
+    },
+    "order_items": {
+      "plugin": "orders",
+      "collection": "order-items",
+      "via": "order_id"
+    },
+    "delivery_charge": {
+      "type": "decimal"
+    },
+    "is_active": {
+      "type": "integer",
+      "default": 1
+    },
+    "customer_id": {
+      "type": "biginteger"
+    },
+    "payment_method": {
+      "type": "string",
+      "required": true,
+      "default": "razorpay"
+    }
+  }
+}

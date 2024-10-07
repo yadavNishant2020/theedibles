@@ -1,0 +1,28 @@
+{
+  "name": "strapi-plugin-activitylog",
+  "version": "1.0.0",
+  "description": "Log activity inside your strapi application",
+  "strapi": {
+    "name": "Activity Log",
+    "icon": "plug",
+    "description": "Log activity inside your strapi application"
+  },
+  "dependencies": {},
+  "author": {
+    "name": "Bobby Glidwell",
+    "email": "sintex+strapi@gmail.com",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "Bobby Glidwell",
+      "email": "sintex+strapi@gmail.com",
+      "url": ""
+    }
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_week_planners",
+  "info": {
+    "name": "Menu Week Planner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "diet": {
+      "type": "dietplan",
+      "columnType": "longtext",
+      "tableField": "diet",
+      "fieldTitle": "Diet Plan",
+      "required": true
+    },
+    "dishes": {
+      "type": "dynamiczone",
+      "components": [
+        "meals.meal-groups"
+      ],
+      "required": true
+    }
+
+  }
+}

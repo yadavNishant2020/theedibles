@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_meals_breakfasts",
+  "info": {
+    "name": "dishes",
+    "icon": "wine-glass",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "dishes": {
+      "collection": "dishes"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_menus_week3s",
+  "info": {
+    "name": "week3",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menu_week_planner": {
+      "model": "menu-week-planner"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/customer-healths",
+      "handler": "customer-health.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-healths/count",
+      "handler": "customer-health.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-healths/:id",
+      "handler": "customer-health.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/customer-healths",
+      "handler": "customer-health.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/customer-healths/:id",
+      "handler": "customer-health.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/customer-healths/:id",
+      "handler": "customer-health.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

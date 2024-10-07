@@ -1,0 +1,28 @@
+{
+  "name": "frontend",
+  "private": true,
+  "scripts": {
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "buildx": "rm -rf distBkp && cp -r dist distBkp && gridsome build",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "@gridsome/source-graphql": "^0.1.0",
+    "@sentry/node": "^6.2.3",
+    "@sentry/tracing": "^6.2.3",
+    "@sentry/vue": "^6.2.3",
+    "axios": "^0.21.1",
+    "babel-runtime": "^6.26.0",
+    "firebase": "^8.3.2",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-modal": "^0.1.1",
+    "logrocket": "^1.0.14",
+    "moment": "^2.29.1",
+    "vee-validate": "^3.4.5",
+    "vue-loading-overlay": "^3.4.2",
+    "vue-markdown": "^2.2.4",
+    "vue-sweetalert2": "^4.2.1",
+    "vuejs-datepicker": "^1.6.2"
+  }
+}

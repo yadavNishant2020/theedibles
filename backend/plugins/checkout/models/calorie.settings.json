@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calories",
+  "info": {
+    "name": "calorie"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "customer_id": {
+      "type": "integer"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "physical_activity": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "items_qty": {
+      "type": "biginteger"
+    },
+    "age": {
+      "type": "integer"
+    }
+  }
+}

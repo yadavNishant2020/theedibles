@@ -1,0 +1,26 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "kitchen-reports.index",
+      "config": {
+        "policies": []
+      }
+    }, {
+      "method": "POST",
+      "path": "/generate",
+      "handler": "kitchen-reports.generate",
+      "config": {
+        "policies": [
+          "admin::isAuthenticatedAdmin"
+        ],
+        "description": "Generate kitchen reports",
+        "tag": {
+          "plugin": "kitchen-reports",
+          "name": "Kitchen Reports"
+        }
+      }
+    }
+  ]
+}

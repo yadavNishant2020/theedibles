@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_items",
+  "info": {
+    "name": "orderItems",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "order_id": {
+      "via": "order_items",
+      "plugin": "orders",
+      "model": "order"
+    },
+    "meal_date": {
+      "type": "date",
+      "required": true
+    },
+    "lunch_dish": {
+      "model": "dishes"
+    },
+    "breakfast_dish": {
+      "model": "dishes"
+    },
+    "snacks_dish": {
+      "model": "dishes"
+    },
+    "dinner_dish": {
+      "model": "dishes"
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    },
+    "menu_planner": {
+      "model": "menu-planner"
+    }
+  }
+}

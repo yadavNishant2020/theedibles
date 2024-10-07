@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "subscriptions.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/webhooks/build",
+      "handler": "subscriptions.buildHook",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

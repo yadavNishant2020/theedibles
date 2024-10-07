@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payment_responses",
+  "info": {
+    "name": "PaymentResponse",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "reference_id": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "response": {
+      "type": "json"
+    },
+    "order_id": {
+      "plugin": "orders",
+      "model": "order"
+    }
+  }
+}

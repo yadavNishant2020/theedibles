@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_footer_text_groups",
+  "info": {
+    "name": "Text Group",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.text"
+    }
+  }
+}

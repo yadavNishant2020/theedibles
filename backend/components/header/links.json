@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_header_links",
+  "info": {
+    "name": "Links",
+    "icon": "external-link-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "default": "#"
+    },
+    "classes": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "link",
+        "button"
+      ],
+      "default": "link"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_blank",
+        "_self",
+        "_parent"
+      ],
+      "default": "_self",
+      "required": true
+    }
+  }
+}

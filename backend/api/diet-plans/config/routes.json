@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/diet-plans",
+      "handler": "diet-plans.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/diet-plans/count",
+      "handler": "diet-plans.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/diet-plans/:id",
+      "handler": "diet-plans.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/diet-plans",
+      "handler": "diet-plans.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/diet-plans/:id",
+      "handler": "diet-plans.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/diet-plans/:id",
+      "handler": "diet-plans.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

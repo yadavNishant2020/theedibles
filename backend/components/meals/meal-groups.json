@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_meals_meal_groups",
+  "info": {
+    "name": "Meal Groups",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "breakfast": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meals.breakfast"
+    },
+    "lunch": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meals.breakfast"
+    },
+    "snacks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meals.breakfast"
+    },
+    "dinner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meals.breakfast"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_header_top_left_menus",
+  "info": {
+    "name": "TopLeftMenu",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.links"
+    }
+  }
+}

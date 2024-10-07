@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "health_food_details",
+  "info": {
+    "name": "Customer Health",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "food_allergies": {
+      "type": "text",
+      "required": true
+    },
+    "medical_conditions": {
+      "type": "text",
+      "required": true
+    },
+    "biggest_challenge": {
+      "type": "text",
+      "required": true
+    },
+    "foods_you_enjoy": {
+      "type": "text",
+      "required": true
+    },
+    "type_of_work_out": {
+      "type": "text"
+    },
+    "exercise_regularly": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "your_goal": {
+      "type": "text",
+      "required": true
+    },
+    "comments": {
+      "type": "text"
+    },
+    "order_id": {
+      "type": "integer"
+    },
+    "cart_id": {
+      "plugin": "checkout",
+      "model": "cart"
+    },
+    "customer_id": {
+      "plugin": "admin",
+      "model": "user"
+    }
+  }
+}

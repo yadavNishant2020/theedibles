@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_menus_monthlies",
+  "info": {
+    "name": "Monthly",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "week1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menus.week1",
+      "required": true
+    },
+    "week2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menus.week2",
+      "required": true
+    },
+    "week3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menus.week3",
+      "required": true
+    },
+    "week4": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menus.week4",
+      "required": true
+    },
+    "week5": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menus.week5"
+    }
+  }
+}

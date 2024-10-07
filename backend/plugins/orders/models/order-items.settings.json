@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_items",
+  "info": {
+    "name": "orderItems"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "order_id": {
+      "via": "order_items",
+      "plugin": "orders",
+      "model": "order"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/physical-activities",
+      "handler": "physical-activity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/physical-activities/count",
+      "handler": "physical-activity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/physical-activities/:id",
+      "handler": "physical-activity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/physical-activities",
+      "handler": "physical-activity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/physical-activities/:id",
+      "handler": "physical-activity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/physical-activities/:id",
+      "handler": "physical-activity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
