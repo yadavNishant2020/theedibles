@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "orders.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/init",
+      "handler": "orders.initOrder",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/complete",
+      "handler": "orders.completeOrder",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/razorpay/order",
+      "handler": "razorpay.createOrder",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lineitem-update/:id",
+      "handler": "orders.lineItemUpdate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lineitem-dish-update/:id",
+      "handler": "orders.lineItemDishesUpdate",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

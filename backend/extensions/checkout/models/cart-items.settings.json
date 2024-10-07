@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cart_items",
+  "info": {
+    "name": "cartItems",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "cart_id": {
+      "via": "cart_items",
+      "plugin": "checkout",
+      "model": "cart"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "meal_plan_details": {
+      "type": "json"
+    },
+    "diet": {
+      "type": "enumeration",
+      "enum": [
+        "Keto",
+        "Balanced",
+        "LowCarb",
+        "HighProtein"
+      ]
+    },
+    "subscription_from": {
+      "type": "date"
+    },
+    "subscription_to": {
+      "type": "date"
+    }
+  }
+}

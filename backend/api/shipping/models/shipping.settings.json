@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shippings",
+  "info": {
+    "name": "Shipping",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    },
+    "pincode": {
+      "model": "pincodes"
+    },
+    "meals_per_day": {
+      "type": "integer",
+      "required": true
+    },
+    "tax_per": {
+      "type": "decimal",
+      "unique": false,
+      "required": true,
+      "default": 18
+    },
+    "duration_type": {
+      "type": "enumeration",
+      "enum": [
+        "Weekly",
+        "Monthly"
+      ],
+      "required": true
+    }
+  }
+}

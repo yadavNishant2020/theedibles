@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_planners",
+  "info": {
+    "name": "Menu Planner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "plan_type": {
+      "type": "dietplan",
+      "columnType": "longtext",
+      "tableField": "plan_type",
+      "fieldTitle": "Diet Plan",
+      "required": true
+    },
+    "duration_type": {
+      "type": "enumeration",
+      "enum": [
+        "Monthly",
+        "Weekly"
+      ],
+      "required": true
+    },
+    "meal_type": {
+      "type": "enumeration",
+      "enum": [
+        "Breakfast_Lunch_Snacks_Dinner",
+        "Breakfast_Lunch_Dinner",
+        "Lunch_Snacks_Dinner",
+        "Lunch_Dinner"
+      ],
+      "required": true,
+      "default": "Breakfast_Lunch_Snacks_Dinner"
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "total_meals": {
+      "type": "integer",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "per_day_meals": {
+      "type": "integer",
+      "required": true
+    },
+    "tax": {
+      "model": "tax"
+    },
+    "Dishes": {
+      "type": "dynamiczone",
+      "components": [
+        "menus.monthly"
+      ]
+    }
+  }
+}

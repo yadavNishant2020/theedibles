@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/menu-week-planners",
+      "handler": "menu-week-planner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/menu-week-planners/count",
+      "handler": "menu-week-planner.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/menu-week-planners/:id",
+      "handler": "menu-week-planner.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/menu-week-planners",
+      "handler": "menu-week-planner.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/menu-week-planners/:id",
+      "handler": "menu-week-planner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/menu-week-planners/:id",
+      "handler": "menu-week-planner.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

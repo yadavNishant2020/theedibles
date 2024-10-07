@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_long_texts",
+  "info": {
+    "name": "Long Text Group",
+    "icon": "arrow-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "longtext": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pincodes",
+      "handler": "pincodes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pincodes/count",
+      "handler": "pincodes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pincodes/:id",
+      "handler": "pincodes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pincodes",
+      "handler": "pincodes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pincodes/:id",
+      "handler": "pincodes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pincodes/:id",
+      "handler": "pincodes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_footer_footers",
+  "info": {
+    "name": "Footer",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "longtext",
+        "links",
+        "sociallinks"
+      ],
+      "default": "text"
+    },
+    "text": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.normal-text"
+    },
+    "longtext": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.rich-text"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.links"
+    }
+  }
+}

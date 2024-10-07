@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "privacy_policies",
+  "info": {
+    "name": "PrivacyPolicy",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

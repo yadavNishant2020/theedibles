@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diet_plans",
+  "info": {
+    "name": "Diet Plans (Blog)",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meals.breakfast"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.seo"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "comming_soon",
+        "on_going"
+      ],
+      "default": "on_going",
+      "required": true
+    }
+  }
+}

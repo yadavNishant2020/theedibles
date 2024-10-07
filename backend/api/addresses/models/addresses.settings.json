@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "Addresses",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "customer_id": {
+      "type": "biginteger"
+    },
+    "cart_id": {
+      "type": "biginteger"
+    },
+    "order_id": {
+      "type": "biginteger"
+    },
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "pincode": {
+      "type": "integer",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "tag": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "address_type": {
+      "type": "enumeration",
+      "enum": [
+        "normal",
+        "selected_address_breakfast",
+        "selected_address_lunch_snacks",
+        "selected_address_dinner"
+      ]
+    }
+  }
+}

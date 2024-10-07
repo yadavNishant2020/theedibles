@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_footer_texts",
+  "info": {
+    "name": "text",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

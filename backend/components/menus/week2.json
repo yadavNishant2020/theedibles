@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_menus_week2s",
+  "info": {
+    "name": "week2",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menu_week_planner": {
+      "model": "menu-week-planner"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_home_main_banners",
+  "info": {
+    "name": "HomeMainBanner",
+    "icon": "border-none"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

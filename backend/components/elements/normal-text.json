@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_normal_texts",
+  "info": {
+    "name": "NormalText",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

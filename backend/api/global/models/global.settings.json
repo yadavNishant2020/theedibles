@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "name": "Global",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "siteName": {
+      "type": "string"
+    },
+    "contactEmail": {
+      "type": "string"
+    },
+    "socialNetworks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.link"
+    },
+    "siteLanguage": {
+      "type": "string",
+      "default": "en",
+      "maxLength": 2
+    },
+    "favicon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "payment_method": {
+      "type": "enumeration",
+      "enum": [
+        "razorpay"
+      ],
+      "required": true,
+      "default": "razorpay"
+    }
+  }
+}

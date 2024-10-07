@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_menus_week1s",
+  "info": {
+    "name": "week1",
+    "icon": "arrow-alt-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menu_week_planner": {
+      "model": "menu-week-planner"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "checkout.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cart",
+      "handler": "cart.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cart",
+      "handler": "cart.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cart",
+      "handler": "cart.clearCart",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cart/:itemId",
+      "handler": "cart.removeItem",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/calorie",
+      "handler": "checkout.calorie",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/calorie",
+      "handler": "checkout.getCalorie",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dishes",
+      "handler": "checkout.dishes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dishes",
+      "handler": "checkout.getDishes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cart/address",
+      "handler": "cart.addCartAddress",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cart/collectTotal",
+      "handler": "cart.collectTotal",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
